@@ -66,6 +66,19 @@ and watched the rain before sunrise.`,
     readTime: "3 min read",
     category: "story",
     coverImage: "/love2.png"
+  },
+  {
+    id: 4,
+    title: "Velvet nights",
+    excerpt: "just as the clouds ocessionally veil...",
+    content: `just as the clouds ocessionally veil the stars,memories of you gentl haunt my soul.
+    i look to the moon and see the ghost of your smile, whereever the world has taken you,
+    i only wish for your light to keep shining, even if it's just a faint glimmer in the distance.',
+.`,
+    date: "May 8, 2026",
+    readTime: "3 min read",
+    category: "story",
+    coverImage: "/love8.png"
   }
 ];
 
