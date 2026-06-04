@@ -64,8 +64,7 @@ export function HomePage({ onEnter }: HomePageProps) {
           animate={{ opacity: 1, y: 0 }}
           className="hidden md:flex gap-8 text-white/80 font-serif"
         >
-          <button className="hover:text-rose-300 transition">Poems</button>
-          <button className="hover:text-rose-300 transition">Stories</button>
+      
         </motion.div>
       </header>
 
@@ -98,16 +97,18 @@ export function HomePage({ onEnter }: HomePageProps) {
             </motion.div>
             <div className="flex flex-wrap gap-4 pt-4">
               <motion.button
-                whileHover={{ scale: 1.03 }}
-                whileTap={{ scale: 0.98 }}
-                onClick={onEnter}
-                className="group bg-rose-600 hover:bg-rose-700 text-white px-8 py-3 rounded-full shadow-md flex items-center gap-2 transition"
-              >
-                Explore Collection <ArrowRight size={16} className="group-hover:translate-x-1 transition" />
-              </motion.button>
-              <button className="border border-rose-300 text-white px-8 py-3 rounded-full hover:bg-white/20 transition backdrop-blur-sm">
-                Read Poems
-              </button>
+  whileHover={{ scale: 1.03 }}
+  whileTap={{ scale: 0.98 }}
+  onClick={() => setIsBookOpen(true)}
+  className="group bg-rose-600 hover:bg-rose-700 text-white px-8 py-3 rounded-full shadow-md flex items-center gap-2 transition"
+>
+  Explore Collection
+  <ArrowRight
+    size={16}
+    className="group-hover:translate-x-1 transition"
+  />
+</motion.button>
+             
             </div>
           </motion.div>
 
