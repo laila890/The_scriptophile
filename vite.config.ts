@@ -18,11 +18,9 @@ function figmaAssetResolver() {
 }
 
 export default defineConfig({
-  base: process.env.NODE_ENV === 'production' ? '/The_scriptophile/' : '/',
+  base: '/', // Change this from the conditional block to just a forward slash
   plugins: [
     figmaAssetResolver(),
-    // The React and Tailwind plugins are both required for Make, even if
-    // Tailwind is not being actively used – do not remove them
     react(),
     tailwindcss(),
   ],
